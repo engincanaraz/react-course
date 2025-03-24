@@ -1,11 +1,8 @@
 import "./ProductItem.css";
 
-function ProductItem() {
-  const imageUrl =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREaXGeoatJyRmP9Aa-q4zaqgcUQim3bQHvjg&usqp=CAU";
-  const productName = "Soda";
-  const productPrice = 4;
+function ProductItem(props) {
 
+  const { imageUrl, productName, productPrice } = props;
   return (
     <div className="product-item">
       <div className="product-image">
